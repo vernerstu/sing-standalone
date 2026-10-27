@@ -1,0 +1,51 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+*.idsig
+app/release/
+release/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Local configuration
+local.properties
+keystore.properties
+.gradle/
+build/
+app/build/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+.DS_Store
+/captures
+
+# CMake / NDK build outputs
+.cxx/
+.externalNativeBuild/
+app/.cxx/
+
+# Scratch & development artifacts
+scratch/
+artifacts/
+*.log
+
+# Large weight / model binaries
+*.onnx
+*.tflite
+*.vinet
+
+# MNN build directory & prebuilt library blobs
+build-mnn/
+app/src/main/jniLibs/**/libMNN.so
+libMNN.so
+
+# KissFFT local build artifacts
+app/src/main/cpp/kissfft/
+extern/kissfft/build/
+extern/kissfft/.build/
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="whats_new_heading">Novità di Sing for Android</string>
+    <string name="whats_new_version">Versione %1$s</string>
+        <string name="whats_new_minor_changes">Mostra cambiamenti minori</string>
+    <string name="whats_new_close">Chiudi</string>
+    <string name="update_available_heading">Nuovo Aggiornamento Disponibile</string>
+    <string name="update_available_downloads">Vai ai Download</string>
+    <string name="update_available_later">Più Tardi</string>
+    <string name="xposed_description">Una reimplementazione della modalità Apple Music Sing per Android eseguita puramente in locale con accelerazione Hardware</string>
+    <string name="open_apple_music">Apri Apple Music</string>
+    <string name="local_player_action">Lettore locale</string>
+    <string name="local_player_title">Lettore Sing</string>
+    <string name="local_player_choose_audio">Scegli file audio</string>
+    <string name="local_player_loading_model">Caricamento del modello selezionato…</string>
+    <string name="local_player_select_model">Seleziona e scarica prima un modello nelle impostazioni.</string>
+    <string name="local_player_processing_ready">Elaborazione locale pronta</string>
+    <string name="local_player_processing">Elaborazione audio…</string>
+    <string name="local_player_play">Riproduci</string>
+    <string name="local_player_pause">Pausa</string>
+    <string name="local_player_stop">Interrompi</string>
+    <string name="local_player_vocal_level">Livello vocale</string>
+    <string name="local_player_back_to_settings">Torna alle impostazioni</string>
+    <string name="local_player_open_error">Impossibile aprire questo file audio.</string>
+    <string name="local_player_no_track">Scegli un file audio senza DRM salvato su questo dispositivo.</string>
+    <string name="local_player_playback_error">Errore di riproduzione: %1$s</string>
+
+    <string name="status_loaded">Modulo Caricato</string>
+    <string name="status_no_model_selected">Nessun modello selezionato</string>
+    <string name="label_xposed_manager_name">Manager Xposed</string>
+    <string name="label_neural_model">Modello Neurale</string>
+    <string name="status_model_format">%1$s • %2$d thread</string>
+    <string name="title_model_selection">Modello Neurale</string>
+    <string name="desc_model_selection">Seleziona il modello neurale per l\'isolamento e l\'attenuazione vocale in tempo reale.</string>
+    <string name="model_info_title">Hardware e Precisione</string>
+    <string name="model_info_desc" formatted="false">• ONNX Runtime (Hexagon HTP NPU &amp; CPU): Consigliato per processori Qualcomm Snapdragon dotati di una NPU Hexagon HTP (FP16), o CPU multithread ad alte prestazioni (FP32).\n• Alibaba MNN (OpenCL / Vulkan / NNAPI / CPU): Consigliato per tutti gli altri dispositivi, offre accelerazione hardware multipiattaforma su GPU Qualcomm Adreno, ARM Mali e Samsung Xclipse. L\'accelerazione Qualcomm Hexagon è anch\'essa supportata, ma con prestazioni inferiori rispetto a ONNX (~25% in meno).\n• Output Vocale vs Output Strumentale: Un modello con Output Vocale è ottimizzato per isolare ed amplificare le tracce vocali, mentre un modello con Output Strumentale si concentra sulla conservazione e sull\'enhancement degli elementi strumentali di una traccia. Entrambi i tipi di modelli possono essere utilizzati per la modalità Karaoke o Acapella di Sing. I modelli di Output Vocale tendono ad essere più leggeri e a richiedere meno potenza computazionale.\n• FP16 vs FP32: L\'FP16 dimezza la larghezza di banda della memoria ed è richiesto per l\'accelerazione NPU. L\'FP32 fornisce la piena precisione ed evita l\'underflow su GPU e CPU potenti. L\'esecuzione di un modello FP32 con accelerazione NPU comporterà solitamente una quantizzazione FP16 al volo, motivo per cui vengono forniti modelli pre-quantizzati.</string>
+    <string name="badge_recommended">Consigliato</string>
+    <string name="filter_family">Famiglia</string>
+    <string name="filter_all_families">Tutte le famiglie</string>
+    <string name="filter_vocal">Output Vocale</string>
+    <string name="filter_instrumental">Output Strumentale</string>
+    <string name="filter_backing_retention">Conserva Cori</string>
+    <string name="filter_no_models">Nessun modello corrisponde ai filtri selezionati</string>
+    <string name="title_lyrics">Testi</string>
+    <string name="title_lyrics_settings">Testi</string>
+
+    <string name="title_sing_settings">Impostazioni di Sing</string>
+    <string name="setting_preserve_side_title">Conserva le Voci sui Canali Side</string>
+    <string name="desc_preserve_side">Usa un taglio spettrale del centro per conservare cori, riverbero, widening del vocoder ed altri effetti stereo.</string>
+    <string name="desc_preserve_side_disabled">Il modello attivo conserva già i cori.</string>
+    <string name="badge_keeps_backing_vocals">Conserva Cori</string>
+    <string name="setting_two_way_slider_title">Cursore a Due Vie</string>
+    <string name="desc_two_way_slider" formatted="false">Divide il cursore Sing: 0–50% riduce le voci per il Karaoke, mentre 50–100% riduce la base musicale per isolare la voce (acapella).</string>
+    <string name="setting_center_group_lyrics_title">Centra Testi di Gruppo</string>
+    <string name="desc_center_group_lyrics">Centra orizzontalmente i versi cantati da cori o dal gruppo nei brani in duetto.</string>
+
+    <string name="setting_blur_unfocused_lyrics_title">Sfoca Testi Non Attivi</string>
+    <string name="desc_blur_unfocused_lyrics">Applica una sfocatura ai versi non attualmente in riproduzione..</string>
+    <string name="setting_english_translation_fallback_title">Fallback con Traduzione Inglese</string>
+    <string name="desc_english_translation_fallback">Mostra la traduzione inglese dei testi di Apple quando non è disponibile nella lingua di sistema.</string>
+    <string name="setting_full_vocal_mute_title">Rimuovi i Limiti del Cursore</string>
+    <string name="setting_full_vocal_mute_desc" formatted="false">Rimuove il livello minimo di volume sul cursore Sing, e consente di impostarlo al 100% senza azionare la disattivazione di Sing.</string>
+    <string name="setting_force_song_eligibility_title">Abilita per Tutti i Brani</string>
+    <string name="desc_force_song_eligibility">Ignora le restrizioni lato server e i testi non sincronizzati per consentire Sing su tutti i brani.</string>
+    <string name="setting_eco_mode_title">Consenti Pause di Raffreddamento</string>
+    <string name="setting_eco_mode_desc" formatted="false">Mette in pausa il processore neurale quando il buffer audio è sufficientemente in anticipo. Potrebbe aiutare a ridurre il carico sulla CPU e le temperature.</string>
+    <string name="setting_force_cpu_title">Forza Inferenza su CPU</string>
+    <string name="setting_force_cpu_desc">Disabilita l\'accelerazione hardware GPU/NPU e forza XNNPACK multi-thread sulla CPU.</string>
+    <string name="setting_hardware_target_title">Acceleratore Hardware</string>
+    <string name="setting_hardware_target_desc">Seleziona target di calcolo: NPU (Hexagon HTP), GPU (OpenCL/Vulkan), NNAPI o CPU multi-thread.</string>
+    <string name="hardware_target_npu_desc">Qualcomm Hexagon HTP / NPU (Massima velocità, bassi consumi)</string>
+    <string name="hardware_target_gpu_desc">Accelerazione GPU mobile OpenCL / Vulkan</string>
+    <string name="hardware_target_nnapi_desc">Accelerazione Android Neural Networks API</string>
+    <string name="hardware_target_cpu_desc">Esecuzione multi-thread su CPU (Fallback portabile)</string>
+    <string name="hardware_fallback_badge">Fallback: %1$s</string>
+    <string name="hardware_fallback_desc">Attivo: %1$s (Fallback accelerazione hardware)</string>
+    <string name="setting_thread_count_title">Thread per Inferenza</string>
+    <string name="setting_thread_count_badge_format">%1$d thread</string>
+    <string name="setting_thread_count_desc">Controlla i core CPU allocati alla separazione vocale.</string>
+    <string name="title_benchmark">Benchmark d\'Inferenza</string>
+    <string name="desc_benchmark_subtitle">Prova la velocità di separazione in locale per il processing audio in tempo reale.</string>
+    <string name="btn_run_benchmark">Avvia Benchmark d\'Inferenza</string>
+    <string name="btn_benchmarking">Benchmark in corso...</string>
+    <string name="label_processing_speed">Velocità di Elaborazione</string>
+    <string name="module_version_mismatch">Versione modulo non corrispondente</string>
+    <string name="module_version_label">App: %1$s\nModulo: %2$s</string>
+    <string name="module_version_unknown">Sconosciuta</string>
+    <string name="tip_version_mismatch">Chiudi forzatamente o riapplica la patch all\'app Apple Music per aggiornare il motore in-app.</string>
+    <string name="benchmark_rtf_format">%1$.2fx Tempo Reale</string>
+    <string name="benchmark_failed">Benchmark fallito</string>
+    <string name="downloading_onnx_runtime">Download ONNX Runtime in corso…</string>
+    <string name="extracting_onnx_runtime">Estrazione ONNX Runtime in corso…</string>
+    <string name="downloading_qnn_accelerator">Download acceleratore QNN in corso…</string>
+    <string name="extracting_qnn_accelerator">Estrazione acceleratore QNN in corso…</string>
+    <string name="downloading">Download in corso…</string>
+
+    <string name="verdict_fast_enough">Il dispositivo è abbastanza veloce per eseguire la separazione vocale in tempo reale.</string>
+    <string name="verdict_too_slow">Il tempo d\'inferenza è più lento della riproduzione in tempo reale. Potrebbero verificarsi degli underrun sull\'audio.</string>
+    <string name="status_not_loaded">Modulo Non Caricato</string>
+    <string name="tip_not_loaded">Assicurati che il modulo Sing for Android sia abilitato nel tuo manager Xposed Framework.</string>
+    <string name="title_performance_settings">Prestazioni</string>
+
+    <string name="open_apple_music_short">Musica</string>
+    <string name="action_select_model">Modelli</string>
+    <string name="action_benchmark">Benchmark</string>
+    <string name="title_engine_details">Dettagli Pipeline &amp; Elaborazione</string>
+    <string name="label_audio_pipeline">Pipeline Audio</string>
+    <string name="label_audio_format">Formato Audio</string>
+    <string name="label_neural_engine">Motore Neurale</string>
+    <string name="label_compute_precision">Precisione</string>
+    <string name="label_target_hardware">Hardware Target</string>
+    <string name="label_chunk_latency">Latenza Chunk</string>
+    <string name="label_breakdown">Dettaglio Tempi</string>
+
+    <!-- Model Downloader -->
+    <string name="btn_download_model">Scarica</string>
+    <string name="btn_downloading_model">Download in corso…</string>
+    <string name="status_downloaded">Scaricato</string>
+    <string name="btn_delete_model">Elimina</string>
+    <string name="msg_download_first">Scarica questo modello prima di selezionarlo.</string>
+
+    <!-- Info Screen -->
+    <string name="title_info">Info</string>
+    <string name="action_info">Info</string>
+    <string name="info_app_subtitle">Separazione Vocale in Tempo Reale per Apple Music</string>
+    <string name="info_theming_title">Aspetto e Tema</string>
+    <string name="info_material_you_title">Tema Material You</string>
+    <string name="info_material_you_desc">Palette di colori dinamica generata dallo sfondo di sistema.</string>
+    <string name="info_github_title">Repository GitHub</string>
+    <string name="info_github_desc">Codice sorgente, segnalazioni e rilasci.</string>
+    <string name="info_third_party_title">Progetti Open Source e di Terze Parti</string>
+    <string name="show_more">Mostra altro</string>
+    <string name="show_less">Mostra meno</string>
+</resources>
